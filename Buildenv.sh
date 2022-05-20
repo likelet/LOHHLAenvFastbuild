@@ -19,6 +19,7 @@ conda install -c compbiocore novoalign
 
 
 # 3. install picard 
+cd ~/bin
 wget https://github.com/broadinstitute/picard/releases/download/1.123/picard-tools-1.123.zip && \
 	unzip picard-tools-1.123.zip && \
 	mv picard-tools-1.123 picard
