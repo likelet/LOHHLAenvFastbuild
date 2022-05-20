@@ -14,7 +14,7 @@ Install [LOHHLA](https://github.com/mskcc/lohhla) run environment is painful as 
 
 # Note to run exmaples 
 
-1. besure add the `--gatkDir`, `--novoDir`,`--HLAexonLoc` were configured. 
+1. Please make sure that the `--gatkDir`, `--novoDir`,`--HLAexonLoc` were configured. 
 
 # Run the following test code 
 
@@ -23,7 +23,7 @@ Install [LOHHLA](https://github.com/mskcc/lohhla) run environment is painful as 
 # mk out folder 
 mkdir test_out
 
-locationDIR="/home/ec2-user/test/lohhla" #  the home of the lohhla software
+locationDIR="${HOME}/lohhla" #  the home of the lohhla software
 
 ourDir="./test_out"
 
@@ -33,8 +33,8 @@ Rscript ${locationDIR}/LOHHLAscript.R --patientId example --outputDir $outDir \
         --HLAfastaLoc ${locationDIR}/data/example.patient.hlaFasta.fa \ 
 	--CopyNumLoc ${locationDIR}/example-file/solutions.txt \
 	--mappingStep TRUE --minCoverageFilter 10 --fishingStep TRUE --cleanUp FALSE \
-        --gatkDir ~/bin/picard \
-	--novoDir ~/miniconda3/envs/lohhla/bin/novoalign \
+        --gatkDir ${HOME}/bin/picard \
+	--novoDir ${HOME}/miniconda3/envs/lohhla/bin/novoalign \
 	--HLAexonLoc ${locationDIR}/data/hla.dat
 ```
 This code also be found at the run-example.sh in lohhla folder.
