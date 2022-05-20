@@ -19,11 +19,10 @@ conda install -c compbiocore novoalign
 
 
 # 3. install picard 
-cd $HOME/bin
+
 wget https://github.com/broadinstitute/picard/releases/download/1.123/picard-tools-1.123.zip && \
 	unzip picard-tools-1.123.zip && \
-	mv picard-tools-1.123 picard
-cd -
+	mv picard-tools-1.123 $HOME/bin/picard
   
 # 4. get LOHHLO latest script as the old script bundle in the conda has some bugs.
 
