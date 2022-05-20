@@ -2,7 +2,7 @@
 
 Install [LOHHLA](https://github.com/mskcc/lohhla) run environment is painful as little information provided by the authors. Here I present a fast installation script to build enssential depdendencies to run at least test dataset 
 
-# Quick configure 
+## Quick configure 
 ```shell
    # clone this repo
    git clone https://github.com/likelet/LOHHLAenvFastbuild.git & cd LOHHLAenvFastbuild
@@ -12,11 +12,11 @@ Install [LOHHLA](https://github.com/mskcc/lohhla) run environment is painful as 
 ```
 
 
-# Note to run exmaples 
+## Note to run exmaples 
 
 1. Please make sure that the `--gatkDir`, `--novoDir`,`--HLAexonLoc` were configured. 
 
-# Run the following test code 
+## Run the following test code 
 
 ```shell 
 # set home dir 
@@ -37,8 +37,9 @@ Rscript ${locationDIR}/LOHHLAscript.R --patientId example --outputDir $outDir \
 	--novoDir ${HOME}/miniconda3/envs/lohhla/bin/novoalign \
 	--HLAexonLoc ${locationDIR}/data/hla.dat
 ```
-This code also be found at the run-example.sh in lohhla folder.
-# Credit. 
+This code also be found at the run-example.sh in lohhla folder.  
+
+## Credit. 
 This script was inspired by Yanxing Chen as well as Shixiang Wang from SYSUCC
 If you use LOHHLA in your research, please cite the following paper:
 
