@@ -4,7 +4,7 @@ Install LOHHLA run environment is painful as little information from provide by 
 # Quick configure 
 ```shell
    # clone this repo
-
+   https://github.com/likelet/LOHHLAenvFastbuild.git
    # run install env 
    bash Buildenv.sh
 
