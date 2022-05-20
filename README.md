@@ -28,9 +28,14 @@ locationDIR="/home/ec2-user/test/lohhla" #  the home of the lohhla software
 ourDir="./test_out"
 
 Rscript ${locationDIR}/LOHHLAscript.R --patientId example --outputDir $outDir \
-	--normalBAMfile ${locationDIR}/example-file/bam/example_BS_GL_sorted.bam --BAMDir ${locationDIR}/example-file/bam/  --hlaPath ${locationDIR}/example-file/hlas \
-        --HLAfastaLoc ${locationDIR}/data/example.patient.hlaFasta.fa --CopyNumLoc ${locationDIR}/example-file/solutions.txt --mappingStep TRUE --minCoverageFilter 10 --fishingStep TRUE --cleanUp FALSE \
-        --gatkDir /home/ec2-user/test/picard-tools-1.119 --novoDir /home/ec2-user/miniconda3/envs/hla/bin --HLAexonLoc ${locationDIR}/data/hla.dat
+	--normalBAMfile ${locationDIR}/example-file/bam/example_BS_GL_sorted.bam --BAMDir ${locationDIR}/example-file/bam/  \
+	--hlaPath ${locationDIR}/example-file/hlas \
+        --HLAfastaLoc ${locationDIR}/data/example.patient.hlaFasta.fa \ 
+	--CopyNumLoc ${locationDIR}/example-file/solutions.txt \
+	--mappingStep TRUE --minCoverageFilter 10 --fishingStep TRUE --cleanUp FALSE \
+        --gatkDir /home/ec2-user/test/picard-tools-1.119 \
+	--novoDir /home/ec2-user/miniconda3/envs/hla/bin \
+	--HLAexonLoc ${locationDIR}/data/hla.dat
 ```
 this code also be found at the run-example.sh in lohhla folders .
 # Credit. 
