@@ -4,7 +4,7 @@
 
 # 1. first build base env from conda lohhla env 
 
-conda create -c bioconda -n lohhla lohhla 
+conda create -n lohhla -c bioconda -c conda-forge 
 conda activate lohhla 
 
 # 2. reinstall proper version of depdencies 
