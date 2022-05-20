@@ -2,10 +2,11 @@
 Install LOHHLA run environment is painful as little information from provide by the authors. Here I present a fast installation script to build enssential depdendencies to run at least test dataset 
 
 # Quick configure 
-```
-# clone this repo
+```shell
+   # clone this repo
 
-# run install
+   # run install env 
+   bash Buildenv.sh
 
 ```
 
