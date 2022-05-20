@@ -33,15 +33,15 @@ Rscript ${locationDIR}/LOHHLAscript.R --patientId example --outputDir $outDir \
         --HLAfastaLoc ${locationDIR}/data/example.patient.hlaFasta.fa \ 
 	--CopyNumLoc ${locationDIR}/example-file/solutions.txt \
 	--mappingStep TRUE --minCoverageFilter 10 --fishingStep TRUE --cleanUp FALSE \
-        --gatkDir /home/ec2-user/test/picard-tools-1.119 \
-	--novoDir /home/ec2-user/miniconda3/envs/hla/bin \
+        --gatkDir ~/bin/picard \
+	--novoDir ~/miniconda3/envs/lohhla/bin/novoalign \
 	--HLAexonLoc ${locationDIR}/data/hla.dat
 ```
-this code also be found at the run-example.sh in lohhla folders .
+This code also be found at the run-example.sh in lohhla folder.
 # Credit. 
 This script was inspired by Yanxing Chen as well as Shixiang Wang from SYSUCC
 If you use LOHHLA in your research, please cite the following paper:
 
-McGranahan et al., Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution, Cell (2017), https://doi.org/10.1016/j.cell.2017.10.001
+>McGranahan et al., Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution, Cell (2017), https://doi.org/10.1016/j.cell.2017.10.001
 
 
