@@ -4,18 +4,18 @@
 
 # 1. first build base env from conda lohhla env 
 
-conda create -n lohhla -c bioconda -c conda-forge 
+conda create -y -n lohhla -c bioconda -c conda-forge 
 conda activate lohhla 
 
 # 2. reinstall proper version of depdencies 
 
-conda install -c bioconda jellyfish=2.2.6
+conda install -y -c bioconda jellyfish=2.2.6
 
-conda install -c bioconda samtools=1.3.1
+conda install -y -c bioconda samtools=1.3.1
 
-conda install -c bioconda bedtools=2.26.0
+conda install -y -c bioconda bedtools=2.26.0
 
-conda install -c compbiocore novoalign
+conda install -y -c compbiocore novoalign
 
 
 # 3. install picard 
